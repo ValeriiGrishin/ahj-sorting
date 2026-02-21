@@ -28,7 +28,7 @@ function renderTable(data) {
       <td>(${movie.year})</td>
       <td>imdb: ${movie.imdb.toFixed(2)}</td>
     `;
-    tbody.appendChild(row);
+    tbody.append(row);
   });
 }
 
@@ -51,7 +51,7 @@ function sortTable(field, direction) {
   });
 
   const tbody = document.querySelector('tbody');
-  rows.forEach(row => tbody.appendChild(row));
+  rows.forEach(row => tbody.append(row))
   updateArrow(field, direction);
 }
 
